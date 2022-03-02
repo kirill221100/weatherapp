@@ -95,6 +95,28 @@
                             </article>
                         </div>
                     {% endif %}
+                    <div class="box">
+                            <article class="media">
+                                <div class="media-left">
+                                    <figure class="image is-50x50">
+                                        <img src="{{ url_for('static', filename='pictures/currency_85911.png') }}" alt="Image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <span class="title">Курс доллара и евро.</span>
+                                            <br>
+                                            <span class="subtitle">Доллар: {{ usd }} руб.</span>
+                                            <br>
+                                            <span class="subtitle">Евро: {{ eur }} руб.</span>
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
                     <a href="{{ url_for('options') }}">Настройки</a>
                 </div>
             </div>
